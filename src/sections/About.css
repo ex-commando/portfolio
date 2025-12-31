@@ -1,0 +1,69 @@
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.summary-text {
+    font-size: 1.1rem;
+    color: #ccc;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.education-block h3,
+.skills-container h3 {
+    color: var(--color-secondary);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.edu-item {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    border-left: 1px solid #333;
+}
+
+.edu-year {
+    font-family: monospace;
+    color: var(--color-accent);
+    min-width: 100px;
+}
+
+.edu-details h4 {
+    font-size: 1rem;
+    color: #eee;
+    margin-bottom: 0.2rem;
+}
+
+.edu-details p {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.skill-tag {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--color-accent);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    cursor: default;
+    transition: all 0.3s ease;
+    color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
