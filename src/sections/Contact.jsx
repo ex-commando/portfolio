@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import SectionWrapper from '../components/SectionWrapper';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
@@ -6,6 +6,27 @@ import './Contact.css';
 
 const Contact = () => {
     const [activeTab, setActiveTab] = useState('message');
+
+    // Check for hash to switch tabs
+    useEffect(() => {
+        const handleHashChange = () => {
+            if (window.location.hash === '#quote') {
+                setActiveTab('quote');
+                // Scroll to contact section if needed
+                const contactSection = document.getElementById('contact');
+                if (contactSection) {
+                    contactSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        };
+
+        // Check on mount
+        handleHashChange();
+
+        // Listen for hash changes
+        window.addEventListener('hashchange', handleHashChange);
+        return () => window.removeEventListener('hashchange', handleHashChange);
+    }, []);
 
     return (
         <SectionWrapper id="contact">

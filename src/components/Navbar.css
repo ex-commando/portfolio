@@ -59,6 +59,24 @@
     width: 100%;
 }
 
+.navbar-links .hire-me-btn {
+    background: var(--color-accent);
+    color: #000 !important;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.navbar-links .hire-me-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 240, 255, 0.4);
+}
+
+.navbar-links .hire-me-btn::after {
+    display: none;
+    /* No underline for button */
+}
+
 .hamburger {
     display: none;
     font-size: 1.5rem;

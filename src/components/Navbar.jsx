@@ -37,6 +37,7 @@ const Navbar = () => {
                 <li><a href="#experience" onClick={closeMenu}>Experience</a></li>
                 <li><a href="#certifications" onClick={closeMenu}>Certifications</a></li>
                 <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
+                <li><a href="#quote" className="hire-me-btn" onClick={closeMenu}>Hire Me</a></li>
             </ul>
         </motion.nav>
     );
