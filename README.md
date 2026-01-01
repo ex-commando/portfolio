@@ -19,6 +19,9 @@ A minimalist, modern, and high-performance portfolio website built with React, V
     *   Glitch text effect on the main title.
     *   Hover effects on skills and certification cards.
     *   Custom gradient glows for depth.
+*   **Contact Forms**: 
+    *   Integrated with [FormSubmit.co](https://formsubmit.co) for zero-backend email delivery.
+    *   Two modes: "Send Message" (Quick contact) and "Request a Quote" (Detailed project qualification).
 
 ## 📂 Sections
 
@@ -26,7 +29,7 @@ A minimalist, modern, and high-performance portfolio website built with React, V
 2.  **About**: Professional summary, education timeline, and a grid of technical skills.
 3.  **Experience**: Vertical timeline of work history with role details.
 4.  **Certifications**: Comprehensive grid of professional certifications with issuer and ID details.
-5.  **Contact**: Direct contact information and a styled form layout.
+5.  **Contact**: Advanced tabbed contact section with functional email forms.
 
 ## 🛠️ Tech Stack
 

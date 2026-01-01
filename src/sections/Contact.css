@@ -39,28 +39,79 @@
     font-size: 1.3rem;
 }
 
-.contact-form {
+/* New wrapper for form side */
+.form-wrapper {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.tab-btn {
+    background: transparent;
+    border: none;
+    color: #888;
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+    color: var(--color-accent);
+    border-bottom-color: var(--color-accent);
+}
+
+.contact-form {
     background: rgba(255, 255, 255, 0.03);
     padding: 2rem;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-bottom: 0.5rem;
+    margin-left: 0.2rem;
 }
 
 .form-group input,
-.form-group textarea {
+.form-group textarea,
+.form-group select {
     width: 100%;
-    padding: 1rem;
+    padding: 0.8rem 1rem;
     background: rgba(0, 0, 0, 0.3);
     border: 1px solid #333;
     border-radius: 6px;
     color: #fff;
     font-family: inherit;
     transition: border-color 0.3s ease;
+}
+
+.form-group select option {
+    background-color: #1a1a1a;
+    color: #fff;
 }
 
 .form-group input:focus,

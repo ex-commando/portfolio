@@ -104,6 +104,8 @@
     transition: filter 0.5s ease;
     z-index: 1;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 4px solid #fff;
+    /* White border as requested */
 }
 
 .hero-img:hover {
@@ -127,10 +129,21 @@
 }
 
 @media (max-width: 900px) {
+    .hero {
+        height: auto;
+        min-height: 100vh;
+        padding-top: 8rem;
+        /* Space for navbar */
+        padding-bottom: 4rem;
+        align-items: flex-start;
+        /* Prevent centering forcing overlaps */
+    }
+
     .hero-content {
         flex-direction: column-reverse;
         text-align: center;
-        gap: 2rem;
+        gap: 3rem;
+        padding-top: 0;
     }
 
     .hero-text h1 {
@@ -139,17 +152,29 @@
 
     .hero-image-wrapper {
         margin-bottom: 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .image-backdrop {
-        width: 250px;
-        height: 320px;
+        width: 80%;
+        max-width: 300px;
+        height: auto;
+        aspect-ratio: 3/4;
         right: auto;
+        left: 50%;
+        transform: translateX(-50%) rotate(5deg);
+        /* Centered with slight rotation */
+        top: 10px;
     }
 
     .hero-img {
-        width: 250px;
-        height: 320px;
+        width: 80%;
+        max-width: 300px;
+        height: auto;
+        aspect-ratio: 3/4;
     }
 
     .hero-socials {
