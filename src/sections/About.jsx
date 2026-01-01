@@ -44,7 +44,7 @@ const About = () => {
                                     hidden: { opacity: 0, y: 20 },
                                     visible: { opacity: 1, y: 0 }
                                 }}
-                                whileHover={{ scale: 1.1, backgroundColor: "var(--color-accent)", color: "#000" }}
+                                whileHover={{ scale: 1.1, backgroundColor: "var(--color-accent)", color: "#fff" }}
                             >
                                 {skill}
                             </motion.div>

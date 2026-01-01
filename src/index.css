@@ -1,10 +1,15 @@
 :root {
-  /* Dark Mode (Default) */
-  --color-bg: #0a0a0a;
-  --color-text: #e0e0e0;
-  --color-accent: #00f0ff;
-  --color-secondary: #7000ff;
-  --color-card-bg: rgba(255, 255, 255, 0.03);
+  /* Black & Wine Theme */
+  --color-bg: #050505;
+  /* Deep Black */
+  --color-text: #eaeaea;
+  /* Off-white for elegance */
+  --color-accent: #800020;
+  /* Deep Wine/Burgundy */
+  --color-secondary: #4a0412;
+  /* Darker Wine */
+  --color-card-bg: #0f0f0f;
+  /* Very dark gray */
   --font-main: 'Inter', sans-serif;
 }
 

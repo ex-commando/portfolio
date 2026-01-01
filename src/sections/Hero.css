@@ -34,10 +34,8 @@
     font-weight: 800;
     line-height: 1.1;
     margin-bottom: 1rem;
-    background: linear-gradient(to right, #fff, #aaa);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #fff;
+    /* Removed tech gradient for cleaner look */
     position: relative;
 }
 
@@ -46,7 +44,7 @@
     font-weight: 300;
     letter-spacing: 2px;
     margin-bottom: 2rem;
-    color: var(--color-secondary);
+    color: var(--color-accent);
 }
 
 .hero-summary {
@@ -64,12 +62,13 @@
 .hero-socials a {
     color: var(--color-text);
     font-size: 1.5rem;
-    transition: color 0.3s ease, transform 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .hero-socials a:hover {
     color: var(--color-accent);
     transform: translateY(-3px);
+    text-shadow: 0 0 10px rgba(128, 0, 32, 0.5);
 }
 
 .hero-image-wrapper {

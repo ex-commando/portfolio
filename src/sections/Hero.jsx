@@ -32,7 +32,7 @@ const Hero = () => {
                     >
                         Hello, I'm
                     </motion.h2>
-                    <h1 className="glitch-text" data-text="FRANCIS ADEGBE">FRANCIS ADEGBE</h1>
+                    <h1 className="hero-name">FRANCIS ADEGBE</h1>
                     <h3>SOFTWARE DEVELOPER</h3>
                     <p className="hero-summary">
                         Expert Computer Scientist specializing in robust programming, innovative solutions, and technical leadership.

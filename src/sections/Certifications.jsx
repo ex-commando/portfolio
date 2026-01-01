@@ -25,7 +25,7 @@ const Certifications = () => {
                             hidden: { opacity: 0, y: 30 },
                             visible: { opacity: 1, y: 0 }
                         }}
-                        whileHover={{ y: -5, boxShadow: "0 10px 30px rgba(0, 240, 255, 0.15)" }}
+                        whileHover={{ y: -5, boxShadow: "0 10px 30px rgba(128, 0, 32, 0.15)" }}
                     >
                         <div className="cert-icon">
                             <FaCertificate />

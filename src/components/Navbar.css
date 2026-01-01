@@ -61,7 +61,8 @@
 
 .navbar-links .hire-me-btn {
     background: var(--color-accent);
-    color: #000 !important;
+    color: #fff !important;
+    /* White text for better contrast on Wine */
     padding: 0.5rem 1.2rem;
     border-radius: 20px;
     transition: all 0.3s ease;
@@ -69,7 +70,8 @@
 
 .navbar-links .hire-me-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(0, 240, 255, 0.4);
+    box-shadow: 0 4px 15px rgba(128, 0, 32, 0.4);
+    /* Wine shadow */
 }
 
 .navbar-links .hire-me-btn::after {
