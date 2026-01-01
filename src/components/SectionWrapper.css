@@ -16,8 +16,8 @@
     transform: translate(-50%, -50%);
     font-size: 30rem;
     color: var(--color-accent);
-    opacity: 0.03;
-    /* Very faded */
+    opacity: 0.1;
+    /* Increased opacity for visibility */
     pointer-events: none;
     z-index: 0;
     animation: floatIcon 10s ease-in-out infinite;
