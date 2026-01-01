@@ -25,7 +25,7 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="skills-container">
+                <div className="skills-container" id="skills">
                     <h3>Skills</h3>
                     <motion.div
                         className="skills-grid"
