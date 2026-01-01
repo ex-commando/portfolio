@@ -18,6 +18,7 @@ export const resumeData = {
             role: "General Manager Specialist",
             company: "MYD TELECOMS (Whizzinternet)",
             period: "June 2024–Present",
+            iconType: "network",
             description: [
                 "Develop and implement strategic business plans to expand the fiber-to-home network, increasing market penetration and revenue growth.",
                 "Oversee day-to-day operations, ensuring efficient deployment, maintenance, and customer support for fiber optic services.",
@@ -29,6 +30,7 @@ export const resumeData = {
             role: "System Administrator & Tech Support",
             company: "Nile University of Nigeria",
             period: "Feb 2023–Present",
+            iconType: "sysadmin",
             description: [
                 "Oversee the management and maintenance of Nile Digital Education's entire IT ecosystem (Website, Portal, LMS).",
                 "Ensure smooth operation and functionality of all IT systems and applications.",
@@ -41,6 +43,7 @@ export const resumeData = {
             role: "Chief Technology Officer",
             company: "Frandek Consulting International",
             period: "Jan 2022–Present",
+            iconType: "leadership",
             description: [
                 "Facilitated comprehensive training sessions on MPMS and EPMS for various federal ministries.",
                 "Guided development and implementation of detailed work plans.",
@@ -52,6 +55,7 @@ export const resumeData = {
             role: "Data Quality Analyst Consultant",
             company: "GIZ Nigeria & ECOWAS",
             period: "Feb 2019–Mar 2024",
+            iconType: "python",
             description: [
                 "Conduct data quality assessments and audits.",
                 "Design and produce creative graphics for various projects.",
@@ -64,6 +68,7 @@ export const resumeData = {
             role: "Technology Lead",
             company: "Mustard Insights",
             period: "Feb 2023–Present",
+            iconType: "database",
             description: [
                 "Design a stable, reliable, and effective database.",
                 "Build platforms, APIs, and dashboards for customers.",
@@ -75,6 +80,7 @@ export const resumeData = {
             role: "Website Developer",
             company: "Eloik International (Remote - Saudi Arabia)",
             period: "Oct 2022–Feb 2023",
+            iconType: "javascript",
             description: [
                 "Design and maintain data systems.",
                 "Develop data collection and analysis processes.",
@@ -86,6 +92,7 @@ export const resumeData = {
             role: "Data Analyst",
             company: "Preston Associates (MasterCard Project)",
             period: "Sep 2022–Nov 2022",
+            iconType: "analytics",
             description: [
                 "Create data dashboards, graphs, and visualizations.",
                 "Set up and maintain automated data processes.",
@@ -97,6 +104,7 @@ export const resumeData = {
             role: "IT Lead",
             company: "CESDA",
             period: "Nov 2021–May 2022",
+            iconType: "security",
             description: [
                 "Manage all IT-related issues within the organization.",
                 "Develop and implement IT policies and procedures."

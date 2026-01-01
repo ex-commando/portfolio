@@ -18,9 +18,11 @@
 }
 
 .footer-logo {
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 2.5rem;
+    font-weight: 400;
     color: #fff;
+    font-family: 'Great Vibes', cursive;
+    color: var(--color-accent);
 }
 
 .footer-socials {

@@ -33,11 +33,35 @@
     border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.05);
     transition: transform 0.3s ease;
+    position: relative;
+    /* Context for absolute icon */
+    overflow: hidden;
+    /* Clip icon */
+    z-index: 1;
 }
 
 .timeline-content:hover {
     transform: translateX(10px);
     background: rgba(255, 255, 255, 0.05);
+}
+
+.exp-bg-icon {
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    font-size: 8rem;
+    color: var(--color-accent);
+    opacity: 0.08;
+    /* Subtle watermark */
+    z-index: -1;
+    pointer-events: none;
+    transform: rotate(-10deg);
+    transition: all 0.5s ease;
+}
+
+.timeline-content:hover .exp-bg-icon {
+    transform: rotate(0deg) scale(1.1);
+    opacity: 0.15;
 }
 
 .job-date {

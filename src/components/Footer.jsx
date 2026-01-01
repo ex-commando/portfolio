@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-content">
-                <div className="footer-logo">FA.</div>
+                <div className="footer-logo">Francis Adegbe</div>
                 <div className="footer-socials">
                     <a href="https://github.com/ex-commando" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
                     <a href="https://www.linkedin.com/in/francisadegbe" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>

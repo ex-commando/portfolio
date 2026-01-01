@@ -10,6 +10,13 @@ const Navbar = () => {
     const toggleMenu = () => setMenuOpen(!menuOpen);
     const closeMenu = () => setMenuOpen(false);
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+
     useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 50);
@@ -25,20 +32,24 @@ const Navbar = () => {
             animate={{ y: 0 }}
             transition={{ duration: 0.5 }}
         >
-            <div className="navbar-logo">FA.</div>
+            <div className={`navbar-container ${scrolled ? 'scrolled' : ''}`}>
+                <div className="navbar-logo" onClick={scrollToTop}>
+                    Francis Adegbe
+                </div>
 
-            <div className="hamburger" onClick={toggleMenu}>
-                {menuOpen ? <FaTimes /> : <FaBars />}
+                <div className="hamburger" onClick={toggleMenu}>
+                    {menuOpen ? <FaTimes /> : <FaBars />}
+                </div>
+
+                <ul className={`navbar-links ${menuOpen ? 'active' : ''}`}>
+                    <li><a href="#about" onClick={closeMenu}>About</a></li>
+                    <li><a href="#skills" onClick={closeMenu}>Skills</a></li>
+                    <li><a href="#experience" onClick={closeMenu}>Experience</a></li>
+                    <li><a href="#certifications" onClick={closeMenu}>Certifications</a></li>
+                    <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
+                    <li><a href="#quote" className="hire-me-btn" onClick={closeMenu}>Request Quote</a></li>
+                </ul>
             </div>
-
-            <ul className={`navbar-links ${menuOpen ? 'active' : ''}`}>
-                <li><a href="#about" onClick={closeMenu}>About</a></li>
-                <li><a href="#skills" onClick={closeMenu}>Skills</a></li>
-                <li><a href="#experience" onClick={closeMenu}>Experience</a></li>
-                <li><a href="#certifications" onClick={closeMenu}>Certifications</a></li>
-                <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
-                <li><a href="#quote" className="hire-me-btn" onClick={closeMenu}>Request Quote</a></li>
-            </ul>
         </motion.nav>
     );
 };
