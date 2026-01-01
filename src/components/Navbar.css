@@ -20,13 +20,25 @@
 
 .navbar-logo {
     font-size: 2.2rem;
-    /* Increased size for script font */
     font-weight: 400;
     color: var(--color-accent);
     letter-spacing: 1px;
     font-family: 'Great Vibes', cursive;
-    /* Fancy font */
     text-shadow: 0 0 10px rgba(255, 0, 79, 0.3);
+    cursor: pointer;
+    /* Acts as Home button */
+}
+
+/* Ensure container spans full width and spreads items */
+.navbar-container {
+    width: 100%;
+    max-width: 1200px;
+    /* Optional constraint for large screens */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    /* Logo Left, Menu Right */
+    align-items: center;
 }
 
 .navbar-links {
