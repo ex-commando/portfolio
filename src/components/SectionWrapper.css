@@ -59,6 +59,14 @@
     z-index: 1;
 }
 
+/* Nuclear Option: Force visibility on mobile to prevent any and all animation issues */
+@media (max-width: 768px) {
+    .section-container {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
+
 .section-title {
     font-size: 2.5rem;
     margin-bottom: 3rem;
