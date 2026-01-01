@@ -9,9 +9,12 @@
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    /* Straight line */
+    justify-content: space-between;
+    /* Spread items out */
     align-items: center;
-    gap: 1.5rem;
+    padding: 0 2rem;
 }
 
 .footer-logo {
@@ -38,4 +41,11 @@
 .footer-copy {
     color: #555;
     font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
 }

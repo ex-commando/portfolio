@@ -13,11 +13,22 @@
 
 .education-block h3,
 .skills-container h3 {
-    color: var(--color-secondary);
+    color: var(--color-text);
+    /* White text */
     margin-bottom: 1.5rem;
     font-size: 1.5rem;
     position: relative;
     display: inline-block;
+
+    /* Glassmorphism Sub-headers */
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 0.5rem 1.5rem;
+    border-radius: 12px;
+    border-bottom: 3px solid var(--color-accent);
+    /* Accent underline */
 }
 
 .edu-item {
