@@ -12,6 +12,14 @@ export const resumeData = {
         "Critical Thinking",
         "Communication"
     ],
+    techStack: {
+        frontend: ["HTML5", "CSS3", "Tailwind CSS", "JavaScript", "React", "Next.js", "Vue.js", "TypeScript"],
+        backend: ["Node.js", "PHP", "Laravel", "WordPress", "Python", "Django", "Flask", "Golang", "Rust", "Java"],
+        apis: ["RESTful APIs", "GraphQL", "gRPC", "Postman", "Swagger", "FastAPI"],
+        microservices: ["Docker", "Kubernetes", "Apache Kafka", "RabbitMQ", "AWS Lambda", "NGINX"],
+        databases: ["PostgreSQL", "MongoDB", "MySQL", "Redis", "SQLite", "Firebase"],
+        devops: ["AWS", "Git", "GitHub", "CI/CD Pipelines", "Linux", "Vercel"]
+    },
     experience: [
         {
             id: 1,

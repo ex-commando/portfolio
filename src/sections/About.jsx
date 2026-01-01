@@ -13,6 +13,17 @@ const About = () => {
                 <div className="about-text">
                     <p className="summary-text">{resumeData.summary}</p>
 
+                    <div className="resume-container">
+                        <a
+                            href="https://drive.google.com/file/d/1DmQLyXQCuVn7ZntdzgSNzd1cnBsbB944/view?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="resume-btn"
+                        >
+                            Download My Resume
+                        </a>
+                    </div>
+
                     <div className="education-block">
                         <h3>Education</h3>
                         {resumeData.education.map((edu, index) => (
@@ -28,7 +39,7 @@ const About = () => {
                 </div>
 
                 <div className="skills-container" id="skills">
-                    <h3>Skills</h3>
+                    <h3>Core Competencies</h3>
                     <motion.div
                         className="skills-grid"
                         initial="hidden"

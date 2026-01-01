@@ -1,4 +1,5 @@
 import SectionWrapper from '../components/SectionWrapper';
+import { useState } from 'react';
 import { resumeData } from '../data/resume';
 import { motion } from 'framer-motion';
 import {
@@ -48,11 +49,29 @@ const certIconMapping = {
 };
 
 const Certifications = () => {
+    const [currentPage, setCurrentPage] = useState(1);
+    const certificatesPerPage = 8;
+
+    // Logic for displaying current certificates
+    const indexOfLastCert = currentPage * certificatesPerPage;
+    const indexOfFirstCert = indexOfLastCert - certificatesPerPage;
+    const currentCerts = resumeData.certifications.slice(indexOfFirstCert, indexOfLastCert);
+    const totalPages = Math.ceil(resumeData.certifications.length / certificatesPerPage);
+
+    // Change page
+    const paginate = (pageNumber) => {
+        setCurrentPage(pageNumber);
+        const section = document.getElementById('certifications');
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <SectionWrapper id="certifications" bgIcon={<FaCode />}>
             <h2 className="section-title">My <span>Certifications</span></h2>
             <div className="cert-grid">
-                {resumeData.certifications.map((cert, index) => (
+                {currentCerts.map((cert, index) => (
                     <motion.div
                         key={index}
                         className="cert-card"
@@ -82,6 +101,28 @@ const Certifications = () => {
                     </motion.div>
                 ))}
             </div>
+
+            {totalPages > 1 && (
+                <div className="pagination-controls">
+                    <button
+                        onClick={() => paginate(currentPage - 1)}
+                        disabled={currentPage === 1}
+                        className="pagination-btn"
+                    >
+                        &lt; Previous
+                    </button>
+                    <span className="page-info">
+                        Page {currentPage} of {totalPages}
+                    </span>
+                    <button
+                        onClick={() => paginate(currentPage + 1)}
+                        disabled={currentPage === totalPages}
+                        className="pagination-btn"
+                    >
+                        Next &gt;
+                    </button>
+                </div>
+            )}
         </SectionWrapper>
     );
 };

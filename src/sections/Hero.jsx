@@ -38,7 +38,7 @@ const Hero = () => {
                         Hello, I'm
                     </motion.h2>
                     <h1 className="hero-name">FRANCIS ADEGBE</h1>
-                    <h3>SOFTWARE DEVELOPER</h3>
+                    <h3>SENIOR SOFTWARE ENGINEER</h3>
                     <p className="hero-summary">
                         Expert Computer Scientist specializing in robust programming, innovative solutions, and technical leadership.
                     </p>

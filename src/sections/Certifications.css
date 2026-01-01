@@ -109,3 +109,55 @@
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+    width: 100%;
+    flex-wrap: wrap;
+    /* Allow wrapping on very small screens */
+}
+
+.pagination-btn {
+    background: transparent;
+    border: 1px solid var(--color-accent);
+    color: var(--color-accent);
+    padding: 0.8rem 1.5rem;
+    /* Larger touch target */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-weight: 500;
+    min-height: 48px;
+    /* Recommended minimum touch target size */
+}
+
+.pagination-btn:hover:not(:disabled) {
+    background: var(--color-accent);
+    color: white;
+    box-shadow: 0 4px 12px rgba(255, 0, 79, 0.2);
+    transform: translateY(-2px);
+}
+
+.pagination-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    border-color: #555;
+    color: #888;
+}
+
+.page-info {
+    color: #ccc;
+    font-size: 0.95rem;
+    font-family: inherit;
+    font-weight: 500;
+    min-width: 80px;
+    text-align: center;
+}

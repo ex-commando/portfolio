@@ -78,3 +78,25 @@
         gap: 2rem;
     }
 }
+
+.resume-container {
+    margin-bottom: 2rem;
+}
+
+.resume-btn {
+    display: inline-block;
+    background: var(--color-accent);
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid var(--color-accent);
+}
+
+.resume-btn:hover {
+    background: transparent;
+    color: var(--color-accent);
+    transform: translateY(-3px);
+}
