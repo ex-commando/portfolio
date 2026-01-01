@@ -1,12 +1,12 @@
 import SectionWrapper from '../components/SectionWrapper';
 import { resumeData } from '../data/resume';
 import { motion } from 'framer-motion';
-import { FaCertificate, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaCertificate, FaExternalLinkAlt, FaPython } from 'react-icons/fa';
 import './Certifications.css';
 
 const Certifications = () => {
     return (
-        <SectionWrapper id="certifications">
+        <SectionWrapper id="certifications" bgIcon={<FaPython />}>
             <h2 className="section-title">My <span>Certifications</span></h2>
             <motion.div
                 className="cert-grid"
@@ -25,7 +25,7 @@ const Certifications = () => {
                             hidden: { opacity: 0, y: 30 },
                             visible: { opacity: 1, y: 0 }
                         }}
-                        whileHover={{ y: -5, boxShadow: "0 10px 30px rgba(128, 0, 32, 0.15)" }}
+                        whileHover={{ y: -5, boxShadow: "0 10px 30px rgba(255, 0, 79, 0.15)" }}
                     >
                         <div className="cert-icon">
                             <FaCertificate />

@@ -3,9 +3,11 @@ import { resumeData } from '../data/resume';
 import { motion } from 'framer-motion';
 import './Experience.css';
 
+import { FaNodeJs } from 'react-icons/fa';
+
 const Experience = () => {
     return (
-        <SectionWrapper id="experience">
+        <SectionWrapper id="experience" bgIcon={<FaNodeJs />}>
             <h2 className="section-title">Work <span>Experience</span></h2>
             <div className="experience-timeline">
                 {resumeData.experience.map((job) => (

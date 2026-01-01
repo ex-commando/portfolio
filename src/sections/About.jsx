@@ -3,9 +3,11 @@ import { resumeData } from '../data/resume';
 import { motion } from 'framer-motion';
 import './About.css';
 
+import { SiJavascript } from 'react-icons/si';
+
 const About = () => {
     return (
-        <SectionWrapper id="about">
+        <SectionWrapper id="about" bgIcon={<SiJavascript />}>
             <h2 className="section-title">About <span>Me</span></h2>
             <div className="about-content">
                 <div className="about-text">

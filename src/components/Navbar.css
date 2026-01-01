@@ -70,7 +70,7 @@
 
 .navbar-links .hire-me-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(128, 0, 32, 0.4);
+    box-shadow: 0 4px 15px rgba(255, 0, 79, 0.4);
     /* Wine shadow */
 }
 

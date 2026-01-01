@@ -2,7 +2,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import './Hero.css';
 import heroImage from '../assets/francis.png';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaReact } from 'react-icons/fa';
 
 const Hero = () => {
     const ref = useRef(null);
@@ -17,6 +17,11 @@ const Hero = () => {
 
     return (
         <section className="hero" ref={ref}>
+            {/* Background Floating Icon */}
+            <div className="section-bg-icon">
+                <FaReact />
+            </div>
+
             <div className="hero-content">
                 <motion.div
                     className="hero-text"

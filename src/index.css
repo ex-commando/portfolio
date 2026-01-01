@@ -1,13 +1,13 @@
 :root {
-  /* Black & Wine Theme */
+  /* Black & Bright Wine Theme */
   --color-bg: #050505;
   /* Deep Black */
   --color-text: #eaeaea;
-  /* Off-white for elegance */
-  --color-accent: #800020;
-  /* Deep Wine/Burgundy */
-  --color-secondary: #4a0412;
-  /* Darker Wine */
+  /* Off-white */
+  --color-accent: #FF004F;
+  /* Electric Ruby/Bright Wine */
+  --color-secondary: #800020;
+  /* Deep Wine (Previous accent) */
   --color-card-bg: #0f0f0f;
   /* Very dark gray */
   --font-main: 'Inter', sans-serif;

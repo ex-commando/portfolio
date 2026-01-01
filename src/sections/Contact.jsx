@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import SectionWrapper from '../components/SectionWrapper';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGitAlt } from 'react-icons/fa';
 import './Contact.css';
 
 const Contact = () => {
@@ -34,7 +34,7 @@ const Contact = () => {
     }, []);
 
     return (
-        <SectionWrapper id="contact">
+        <SectionWrapper id="contact" bgIcon={<FaGitAlt />}>
             <h2 className="section-title">Contact <span>Francis</span></h2>
             <div className="contact-container">
                 <motion.div

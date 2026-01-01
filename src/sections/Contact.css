@@ -134,7 +134,7 @@
 
 .submit-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(128, 0, 32, 0.3);
+    box-shadow: 0 4px 15px rgba(255, 0, 79, 0.3);
     /* Wine shadow */
 }
 
