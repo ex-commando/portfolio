@@ -8,23 +8,11 @@ const Certifications = () => {
     return (
         <SectionWrapper id="certifications" bgIcon={<FaPython />}>
             <h2 className="section-title">My <span>Certifications</span></h2>
-            <motion.div
-                className="cert-grid"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "0px" }}
-                variants={{
-                    visible: { transition: { staggerChildren: 0.1 } }
-                }}
-            >
+            <div className="cert-grid">
                 {resumeData.certifications.map((cert, index) => (
                     <motion.div
                         key={index}
                         className="cert-card"
-                        variants={{
-                            hidden: { opacity: 0, y: 30 },
-                            visible: { opacity: 1, y: 0 }
-                        }}
                         whileHover={{ y: -5, boxShadow: "0 10px 30px rgba(255, 0, 79, 0.15)" }}
                     >
                         <div className="cert-icon">
@@ -50,7 +38,7 @@ const Certifications = () => {
                         </div>
                     </motion.div>
                 ))}
-            </motion.div>
+            </div>
         </SectionWrapper>
     );
 };
