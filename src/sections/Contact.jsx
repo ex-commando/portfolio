@@ -12,7 +12,12 @@ const Contact = () => {
         const handleHashChange = () => {
             if (window.location.hash === '#quote') {
                 setActiveTab('quote');
-                // Scroll to contact section if needed
+                const contactSection = document.getElementById('contact');
+                if (contactSection) {
+                    contactSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            } else if (window.location.hash === '#contact') {
+                setActiveTab('message');
                 const contactSection = document.getElementById('contact');
                 if (contactSection) {
                     contactSection.scrollIntoView({ behavior: 'smooth' });
