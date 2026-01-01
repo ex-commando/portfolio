@@ -120,7 +120,7 @@ export const resumeData = {
         },
         {
             degree: "National Diploma, Cyber Security and Computer Networking",
-            school: "Southern Institute of Innovative Technology",
+            school: "Southern Nigeria Institute of Innovative Technology",
             year: "2012 – 2014"
         },
         {
