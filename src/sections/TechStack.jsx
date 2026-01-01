@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import SectionWrapper from '../components/SectionWrapper';
 import { resumeData } from '../data/resume';
 import './TechStack.css';
@@ -59,9 +60,11 @@ const iconMap = {
 };
 
 const TechStack = () => {
+    const [activeTab, setActiveTab] = useState(Object.keys(resumeData.techStack)[0]);
+
     const getCategoryTitle = (category) => {
         if (category === 'apis') return 'APIs';
-        if (category === 'devops') return 'DevOps'; // Nice to have
+        if (category === 'devops') return 'DevOps';
         return category.charAt(0).toUpperCase() + category.slice(1);
     };
 
@@ -69,20 +72,30 @@ const TechStack = () => {
         <SectionWrapper id="tech-stack" bgIcon={<SiStackblitz />}>
             <h2 className="section-title">My <span>Tech Stack</span></h2>
 
-            <div className="tech-stack-container">
-                {Object.entries(resumeData.techStack).map(([category, skills], idx) => (
-                    <div key={idx} className="tech-category">
-                        <h4 className="category-title">{getCategoryTitle(category)}</h4>
-                        <div className="tech-grid">
-                            {skills.map((tech, i) => (
-                                <div key={i} className="tech-item" title={tech}>
-                                    <span className="tech-icon">{iconMap[tech] || <FaCode />}</span>
-                                    <span className="tech-name">{tech}</span>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
+            <div className="tech-tabs">
+                {Object.keys(resumeData.techStack).map((category) => (
+                    <button
+                        key={category}
+                        className={`tab-btn ${activeTab === category ? 'active' : ''}`}
+                        onClick={() => setActiveTab(category)}
+                    >
+                        {getCategoryTitle(category)}
+                    </button>
                 ))}
+            </div>
+
+            <div className="tech-stack-container">
+                <div className="tech-category active">
+                    <h4 className="category-title">{getCategoryTitle(activeTab)}</h4>
+                    <div className="tech-grid">
+                        {resumeData.techStack[activeTab].map((tech, i) => (
+                            <div key={i} className="tech-item" title={tech}>
+                                <span className="tech-icon">{iconMap[tech] || <FaCode />}</span>
+                                <span className="tech-name">{tech}</span>
+                            </div>
+                        ))}
+                    </div>
+                </div>
             </div>
         </SectionWrapper>
     );

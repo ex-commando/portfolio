@@ -23,21 +23,9 @@ export const resumeData = {
     experience: [
         {
             id: 1,
-            role: "General Manager Specialist",
-            company: "MYD TELECOMS (Whizzinternet)",
-            period: "June 2024–Present",
-            iconType: "network",
-            description: [
-                "Develop and implement strategic business plans to expand the fiber-to-home network, increasing market penetration and revenue growth.",
-                "Oversee day-to-day operations, ensuring efficient deployment, maintenance, and customer support for fiber optic services.",
-                "Lead sales and marketing initiatives to promote fiber-to-home services."
-            ]
-        },
-        {
-            id: 2,
             role: "System Administrator & Tech Support",
             company: "Nile University of Nigeria",
-            period: "Feb 2023–Present",
+            period: "June 2024 – Present",
             iconType: "sysadmin",
             description: [
                 "Oversee the management and maintenance of Nile Digital Education's entire IT ecosystem (Website, Portal, LMS).",
@@ -47,10 +35,22 @@ export const resumeData = {
             ]
         },
         {
+            id: 2,
+            role: "General Manager Specialist",
+            company: "MYD TELECOMS (Whizzinternet)",
+            period: "June 2023 - June 2024",
+            iconType: "network",
+            description: [
+                "Develop and implement strategic business plans to expand the fiber-to-home network, increasing market penetration and revenue growth.",
+                "Oversee day-to-day operations, ensuring efficient deployment, maintenance, and customer support for fiber optic services.",
+                "Lead sales and marketing initiatives to promote fiber-to-home services."
+            ]
+        },
+        {
             id: 3,
             role: "Chief Technology Officer",
             company: "Frandek Consulting International",
-            period: "Jan 2022–Present",
+            period: "Jan 2022–June 2023",
             iconType: "leadership",
             description: [
                 "Facilitated comprehensive training sessions on MPMS and EPMS for various federal ministries.",
@@ -75,7 +75,7 @@ export const resumeData = {
             id: 5,
             role: "Technology Lead",
             company: "Mustard Insights",
-            period: "Feb 2023–Present",
+            period: "Feb 2023–April 2024",
             iconType: "database",
             description: [
                 "Design a stable, reliable, and effective database.",
